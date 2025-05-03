@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>REGISTER</title>
+  <style>
+    body
+    {
+      background-image: url("https://img.freepik.com/free-vector/watercolor-background_87374-69.jpg?w=2000");
+      
+      background-repeat: no-repeat;
+
+    }
+    h3
+    {
+      text-align: center;
+      font-family: Georgia;
+    }
+    
+
+
+      .img
+      {
+        margin-left: 10px;
+        margin-top: 20px;
+        height:50px;
+        width: 50px;
+        opacity: 70%;
+      }
+      .table
+      {
+        background-color: #ffffff;
+        margin-left: 450px;
+        margin-top: 55px;
+        margin-right: 400px;
+        margin-bottom: 200px;
+        height: 400px;
+        width: 350px;
+        align-items: center;
+        border: solid 3px #f2f2f2;
+        border-radius: 10px;
+        float: right;
+        padding: 15px 15px;
+        
+      }
+      input[type=text], input[type=password],input[type=email] {
+  width: 70%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+      button
+      {
+        height: 40px;
+        width:200px;
+        color:white;
+        font-family: Georgia;
+        font-size: 15px;
+        margin-left: 85px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        cursor:pointer;
+        background-color: #ff9900;
+      }
+      button.hover
+      {
+       opacity: 0.8;
+      }
+      
+
+   </style>
+</head>
+<body><br>
+  
+  <br><br>
+  
+  <div class="table">
+    <h3>REGISTER</h3>
+    <form method="POST" action="register_insert.php" oninput = 'validatePassword()' >
+
+      <div>
+        <label> Username</label>
+        <br>
+                  <input type="text" name="username" id="name" class="rlform-input" required><br>
+                  <label>Email</label><br>
+                  <input type="email" name="email" class="rlform-input" required><br>
+               <label>Password</label><br>
+                  <input type="password" name="password" id="newPass" class="rlform-input" required><br>
+                  <label>Confirm Password</label><br>
+                  <input type="password" name="confirm_password" id="conformPass" class="rlform-input" required><br>
+                <br><button  type ="submit" value="Register">REGISTER</button>
+    </h4>
+    <div class="text-foot">
+     Already have an account? <a href="login.php">Login</a>
+    </div>
+    </form>
+  </div>
+  <script>
+    function validatePassword(){
+  if(newPass.value != conformPass.value) {
+    conformPass.setCustomValidity('Passwords do not match.');
+  } else {
+    conformPass.setCustomValidity('');
+  }
+}
+  </script>
+  </body>
+<html>

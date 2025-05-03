@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>Add Doctor</title>
+	<style>
+		body
+		{
+			
+      background-image: url("https://img.freepik.com/free-vector/watercolor-background_87374-69.jpg?w=2000");
+      
+			background-repeat: no-repeat;
+   /* background-color: #99ddff;*/
+		}
+     input[type=text], input[type=password] {
+     width: 90%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+		h3
+		{
+			font-family: Georgia;
+		}
+
+    /**/
+      .img
+      {
+      	margin-left: 10px;
+      	margin-top: 20px;
+      	height:50px;
+      	width: 50px;
+      	opacity: 70%;
+      }
+      .table
+      {
+        
+      	background-color: #ffffff;
+      	margin-left: 400px;
+      	margin-top: 10px;
+      	margin-right: 20px;
+      	margin-bottom: 50px;
+      	height: 500px;
+      	width: 900px;
+      	border: solid 3px #f2f2f2;
+      	border-radius: 10px;
+      	float: right;
+      	padding: 15px;
+      	
+      }
+      button
+      {
+      	height: 30px;
+      	width:200px;
+        color:white;
+        font-family: Georgia;
+        font-size: 15px;
+        cursor:pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .btn1
+      {
+          background-color: #33ccff;
+      }
+      .btn2
+      {
+      	background-color: #ff0000;
+      }
+      
+   </style>
+</head>
+<body>
+  
+	
+	<div class="table">
+		<h3>Add Doctor</h3>
+		<form  name = "myform3" action="doctors_insert.php" method="POST">
+			<table>
+				
+                <tr>
+                  <td><label>  First Name</label></td>
+                  <td><input type="text" name=" first_name"  required></td>
+
+                  <td><label>  Last Name</label></td>
+                  <td><input type="text" name=" last_name"  required></td>
+                </tr>
+                <tr>
+                	<td><label>Department ID</label></td>
+                	<td><input type="text" name="department_id" required></td>
+                
+                  <td><label>Specialist</label></td>
+                  <td><input type="text" name="specialist"  required></td>
+                </tr>
+                <tr>
+                  <td><label>Date of Joining</label></td>
+                  <td><input type="text" name="date_of_join" required></td>
+              
+                  <td><label>Date of Retriement</label></td>
+                  <td><input type="text" name="date_of_retriement" required></td>
+                </tr>
+                <tr>
+                	<td><label>Date of Birth</label></td>
+                	<td><input type="text" name="dob"  placeholder="01-01-2000" required></td>
+                
+                	<td><label>Age</label></td>
+                	<td><input type="text" name="age"  required></td>
+                </tr>
+                
+                <tr>
+                	<td><label>Address Line </label></td>
+                	<td><input type="text" name="address" required></td>
+               
+                	<td><label>City</label></td>
+                	<td><input type="text" name="city" required></td>
+                </tr>
+                <tr>
+                	<td><label>State</label></td>
+                	<td><input type="text" name="state" required></td>
+                
+                	<td><label>Phone Number</label></td>
+                	<td><input type="text" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><button class="btn1" type ="submit" value="Save">Save
+                    </button><br><br></td>
+                    <td><button type ="reset" value="Back" ><a href="http://localhost/mini%20project/front.html">Back</a>
+                    </button><br><br></td>
+                    
+                </tr>
+			</table>
+		</form>
+	</div>
+	</body>
+<html>
