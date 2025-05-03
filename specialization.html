@@ -1,226 +1,249 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Specialization</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Georgia;
-}
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Georgia;
+    }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-  color: #FF884B;
-}
+    a {
+      text-decoration: none;
+      background-color: #f1f1f1;
+      color: black;
+    }
 
-.row {
-  margin: 10px -16px;
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+      color: #FF884B;
+    }
 
-}
+    .row {
+      margin: 10px -16px;
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+    }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none;
+      /* Hide all elements by default */
+    }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-  height: 150px;
-  width: 300px;
-}
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+      height: 150px;
+      width: 300px;
+    }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
 
-.btn:hover {
-  background-color: #b3ecff;
-}
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+    }
 
-.btn.active {
-  background-color: #33ccff;
-  color: white;
-}
-</style>
+    .btn:hover {
+      background-color: #b3ecff;
+    }
+
+    .btn.active {
+      background-color: #33ccff;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- MAIN (Center website) -->
-<div class="main">
+  <!-- MAIN (Center website) -->
+  <div class="main">
 
-<h2>SPECIALIZATION</h2>
-<hr>
+    <h2>SPECIALIZATION</h2>
+    <hr>
 
-<!-- <h2>PORTFOLIO</h2> -->
+    <!-- <h2>PORTFOLIO</h2> -->
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Treatments</button>
-  <button class="btn" onclick="filterSelection('cars')"> Doctors</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-  <a  href="http://localhost/mini%20project/front.html">click here to home</a>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2020/11/shutterstock_1014336082.jpg" alt="Pulmonology" style="width:100%">
-      <h4>Pulmonology</h4>
-      <p>Rating : 4.5/5</p>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Treatments</button>
+      <button class="btn" onclick="filterSelection('cars')"> Doctors</button>
+      <button class="btn" onclick="filterSelection('people')"> People</button>
+      <a class="btn" href="index.html"> Home</a>
     </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="https://www.windsor.edu/wp-content/uploads/2018/10/considering-pediatrics-1109x675.jpg" alt="Pediatrics" style="width:100%">
-      <h4>Pediatrics</h4>
-      <p>Rating : 4.7/5</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2020/11/shutterstock_1014336082.jpg"
+            alt="Pulmonology" style="width:100%">
+          <h4>Pulmonology</h4>
+          <p>Rating : 4.5/5</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="https://www.windsor.edu/wp-content/uploads/2018/10/considering-pediatrics-1109x675.jpg"
+            alt="Pediatrics" style="width:100%">
+          <h4>Pediatrics</h4>
+          <p>Rating : 4.7/5</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img
+            src="https://media.istockphoto.com/id/962094986/photo/medicine-doctor-team-meeting-and-analysis-diagnose-checking-brain-testing-result-with-modern.jpg?s=612x612&w=0&k=20&c=kGLHaPpytouHvFFF1Yo_Uyx3dUiA2ZDGHH7d0Mk-d5E="
+            alt="Neurologist" style="width:100%">
+          <h4>Neurologist</h4>
+          <p>Rating : 4.3/5</p>
+        </div>
+      </div>
+      <!--  <br> -->
+      <div class="column cars">
+        <div class="content">
+          <img
+            src="https://d3nguss5oq9r8q.cloudfront.net/blog/wp-content/uploads/2022/03/shutterstock_1680655153-1-min-1024x576.png"
+            alt="Doctor 1" style="width:100%">
+          <h4> Dr Arthur Reese Abright, M.D.</h4>
+          <p>Rating : 4.8/5</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="https://media.healthecareers.com/wp-content/uploads/2022/02/11211726/recycling-doctors.jpg"
+            alt="Doctor 2" style="width:100%">
+          <h4> Dr Myles. B. Abbott, M.D.</h4>
+          <p>Rating : 4.9/5</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="https://www.staffcare.com/siteassets/about-us/about-staff-care.jpg" alt="Doctor 3"
+            style="width:100%">
+          <h4>Dr William A. Abdu, M.D, M.S.</h4>
+          <p>Rating : 4.6/5</p>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="https://thelocaldoctor.com.au/wp-content/uploads/2021/04/doctor-slider-900.jpg" alt="Car"
+            style="width:100%">
+          <h4>Treatment</h4>
+          <p>Rating : 4.6/5</p>
+        </div>
+      </div>
+      <!--  <br> -->
+      <div class="column people">
+        <div class="content">
+          <img
+            src="https://media.istockphoto.com/photos/dietician-working-on-diet-plan-with-digital-tablet-picture-id1258586742?b=1&k=20&m=1258586742&s=170667a&w=0&h=mIm_3YQYf_Vi585oRpB4m4vbXM_pIIyrzrsFHLOBQJs="
+            alt="Car" style="width:100%">
+          <h4>Nutrition diet</h4>
+          <p>Rating : 4.5/5</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img
+            src="https://media.istockphoto.com/photos/efficient-pharmacy-operations-thanks-to-teamwork-picture-id1036131880?b=1&k=20&m=1036131880&s=612x612&w=0&h=hLYHeOa27JjNajw1OCMZUaKmGep4b5Ycz4sJowD4r2U="
+            alt="Car" style="width:100%">
+          <h4>Pharmacy</h4>
+          <p>Rating : 4.8/5</p>
+        </div>
+      </div>
+
+      <!-- END GRID -->
     </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="https://media.istockphoto.com/id/962094986/photo/medicine-doctor-team-meeting-and-analysis-diagnose-checking-brain-testing-result-with-modern.jpg?s=612x612&w=0&k=20&c=kGLHaPpytouHvFFF1Yo_Uyx3dUiA2ZDGHH7d0Mk-d5E=" alt="Neurologist" style="width:100%">
-      <h4>Neurologist</h4>
-      <p>Rating : 4.3/5</p>
-    </div>
-  </div>
- <!--  <br> -->
-  <div class="column cars">
-    <div class="content">
-      <img src="https://d3nguss5oq9r8q.cloudfront.net/blog/wp-content/uploads/2022/03/shutterstock_1680655153-1-min-1024x576.png" alt="Doctor 1" style="width:100%">
-      <h4> Dr Arthur Reese Abright, M.D.</h4>
-      <p>Rating : 4.8/5</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://media.healthecareers.com/wp-content/uploads/2022/02/11211726/recycling-doctors.jpg" alt="Doctor 2" style="width:100%">
-      <h4> Dr Myles. B. Abbott, M.D.</h4>
-      <p>Rating : 4.9/5</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://www.staffcare.com/siteassets/about-us/about-staff-care.jpg" alt="Doctor 3" style="width:100%">
-      <h4>Dr William A. Abdu, M.D, M.S.</h4>
-      <p>Rating : 4.6/5</p>
-    </div>
+
+    <!-- END MAIN -->
   </div>
 
-  <div class="column people">
-    <div class="content">
-      <img src="https://thelocaldoctor.com.au/wp-content/uploads/2021/04/doctor-slider-900.jpg" alt="Car" style="width:100%">
-      <h4>Treatment</h4>
-      <p>Rating : 4.6/5</p>
-    </div>
-  </div>
- <!--  <br> -->
-  <div class="column people">
-    <div class="content">
-    <img src="https://media.istockphoto.com/photos/dietician-working-on-diet-plan-with-digital-tablet-picture-id1258586742?b=1&k=20&m=1258586742&s=170667a&w=0&h=mIm_3YQYf_Vi585oRpB4m4vbXM_pIIyrzrsFHLOBQJs=" alt="Car" style="width:100%">
-      <h4>Nutrition diet</h4>
-      <p>Rating : 4.5/5</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="https://media.istockphoto.com/photos/efficient-pharmacy-operations-thanks-to-teamwork-picture-id1036131880?b=1&k=20&m=1036131880&s=612x612&w=0&h=hLYHeOa27JjNajw1OCMZUaKmGep4b5Ycz4sJowD4r2U=" alt="Car" style="width:100%">
-      <h4>Pharmacy</h4>
-      <p>Rating : 4.8/5</p>
-    </div>
-  </div>
-
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
     }
-  }
-  element.className = arr1.join(" ");
-}
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 
 </body>
+
 </html>
